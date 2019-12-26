@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+li {
+  margin-right: 1em;
+  margin-left: 1em;
+  list-style: none;
+}
+
+.page-enter {
+  clip-path: circle(0%);
+  transition: clip-path 1.5s ease;
+}
+
+.page-enter.page-enter-active {
+  clip-path: circle(100%);
+}
+
+.page-exit {
+  clip-path: circle(100%);
+}
+.page-exit.fade-exit-active {
+  transition: clip-path 1s;
+  clip-path: circle(10%);
+}
